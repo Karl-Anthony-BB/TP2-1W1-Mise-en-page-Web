@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bastien-Bisson, Karl-Anthony TP2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Tangerine:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/formulaire.css" />
+    <link rel="stylesheet" href="css/tableau.css" />
+  </head>
+  <body>
+    <div class="hero" id="acceuil">
+      <!-- HERO -->
+      <!-- BARRE SUP -->
+      <div class="hero__barreSup">
+        <!-- LOGO -->
+        <img
+          class="hero__logo"
+          src="images/GTRLogo.jpg"
+          alt="LogoGTR"
+          height="180"
+          width="180"
+        />
+
+        <!-- NAVIGATION -->
+        <div class="hero__navigation">
+          <label class="navigation__bouton" for="chk-burger">
+            <!-- IMAGE MENU -->
+            <img
+              src="https://s2.svgbox.net/hero-solid.svg?ic=menu&color=fff"
+              width="32"
+              height="32"
+              alt="icon menu"
+            />
+          </label>
+          <input type="checkbox" id="chk-burger" />
+
+          <!-- LIENS RAPIDES -->
+          <nav class="navigation__menu">
+            <a href="#acceuil">Acceuil</a>
+            <a href="#inscription">Inscription</a>
+            <a href="#tableau">Tableau</a>
+            <a href="#article">Articles</a>
+            <a href="#galerie">Galerie</a>
+            <a href="#video">Vidéo</a>
+            <a href="#adresse">Adresse</a>
+          </nav>
+        </div>
+      </div>
+
+      <!-- TEXTE -->
+      <header class="hero__header centre">
+        <!-- TITRE -->
+        <h1 class="hero__titre">LuxAuto</h1>
+
+        <!-- SOUS-TITRE -->
+        <h2 class="hero__sousTitre">Louez l'exceptionnel</h2>
+
+        <!-- DESCRIPTION -->
+        <p class="hero__description">
+          Vous souhaitez louer une voiture de prestige sans engagement et en un
+          seul clic? Ce site est fait pour vous. Choisissez un abonnement et
+          accédez, selon votre formule, à une sélection exclusive de voitures
+          haut de gamme à votre portée. Explorez nos voitures soigneusement
+          sélectionnées, de nos plus belles visuellement aux plus puissantes,
+          toutes entretenues rigoureusement pour une conduite confortable en
+          tout temps. Grâce à nos offres flexibles et notre interface simple à
+          naviguer, la location d'une voiture de prestige n'a jamais été aussi
+          simple et rapide. Intrigué par ce que vous voyez ? Cliquez sur le
+          bouton d'inscription ci-dessous et rejoignez-nous dès maintenant.
+        </p>
+
+        <!-- BOUTON INSCRIPTION -->
+        <a href="#inscription" class="hero__inscription">Inscription</a>
+
+        <div class="hero__bas">
+          <!-- NOM D'AUTEUR -->
+          <h4 class="hero__auteur">
+            <i>Auteur: Karl-Anthony Bastien-Bisson</i>
+          </h4>
+
+          <!-- RESAUX SOCIAUX -->
+          <!-- FACEBOOK -->
+          <div class="hero__resaux">
+            <img
+              src="https://s2.svgbox.net/social.svg?ic=facebook&color=fff"
+              alt="facebook"
+            />
+
+            <!-- INSTAGRAM -->
+            <img
+              src="https://s2.svgbox.net/social.svg?ic=instagram&color=fff"
+              alt="instagram"
+            />
+
+            <!-- LINKEDIN -->
+            <img
+              src="https://s2.svgbox.net/social.svg?ic=linkedin&color=fff"
+              alt="linkedin"
+            />
+
+            <!-- TIKTOK -->
+            <img
+              src="https://s2.svgbox.net/social.svg?ic=tiktok&color=fff"
+              alt="tiktok"
+            />
+
+            <!-- YOUTUBE -->
+            <img
+              src="https://s2.svgbox.net/social.svg?ic=youtube&color=ffffff"
+              alt="youtube"
+            />
+          </div>
+        </div>
+      </header>
+    </div>
+    <!---- MAIN-->
+    <!-- SECTION INSCRIPTION (FORMULAIRE) -->
+    <div>
+      <section class="inscription centre" id="inscription">
+        <!-- TEXTE -->
+
+        <!-- TITRE -->
+        <h1 class="inscription__titre">Inscription</h1>
+
+        <!-- SOUS-TITRE -->
+        <p class="inscription__sousTitre">
+          Rejoignez-nous dès maintenant et accédez à nos voitures de luxe.
+        </p>
+
+        <!-- FORMULAIRE -->
+        <form class="inscription__formulaire">
+          <div class="inscription__div">
+            <!-- NOM -->
+            <fieldset>
+              <label class="inscription" for="txt-nom">Nom</label>
+              <input
+                class="inscription__text"
+                id="txt-nom"
+                type="text"
+                placeholder="Entrez votre nom"
+              />
+            </fieldset>
+
+            <!-- PRENOM -->
+            <fieldset>
+              <label class="inscription" for="txt-prenom">Prenom</label>
+              <input
+                class="inscription__text"
+                id="txt-prenom"
+                type="text"
+                placeholder="Entrez votre prenom"
+              />
+            </fieldset>
+
+            <!--COURRIEL-->
+            <fieldset>
+              <label class="inscription" for="txt-courriel">Courriel</label>
+              <input
+                class="inscription__text"
+                id="txt-courriel"
+                type="email"
+                placeholder="Entrez votre courriel"
+              />
+            </fieldset>
+          </div>
+
+          <!-- ABONNEMENT -->
+          <fieldset class="inscription__abonnement">
+            <legend class="abonnement__titre">Abonnement</legend>
+            <label>Bronze<input type="radio" name="rad-abonnement" /></label>
+            <label>Argent<input type="radio" name="rad-abonnement" /></label>
+            <label>Or<input type="radio" name="rad-abonnement" /></label>
+          </fieldset>
+          <input class="inscription__valider" type="submit" value="Valider" />
+        </form>
+      </section>
+    </div>
+
+    <!-- SECTION TABLEAU -->
+    <div>
+      <section class="tableau centre" id="tableau">
+        <h1>Nos Abonnements</h1>
+        <table>
+          <thead>
+            <tr>
+              <th>Abonnement + Prix</th>
+              <th>Voiture</th>
+              <th>Catégorie</th>
+              <th>Vitesse Max</th>
+              <th>0-100 km/h</th>
+              <th>Transmission</th>
+              <th>Consommation</th>
+              <th>Notes</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <!-- ===================== -->
+            <!--     BRONZE (3)     -->
+            <!-- ===================== -->
+            <tr>
+              <td>Bronze 280$</td>
+              <td>Audi A3</td>
+              <td>Compact Premium</td>
+              <td>210 km/h</td>
+              <td>7.2 s</td>
+              <td>Automatique</td>
+              <td>6.5 L / 100 km</td>
+              <td>Conduite facile</td>
+            </tr>
+
+            <tr>
+              <td>Bronze 280$</td>
+              <td>BMW 228i Gran Coupé</td>
+              <td>Entrée de gamme</td>
+              <td>230 km/h</td>
+              <td>6.1 s</td>
+              <td>Automatique</td>
+              <td>7.2 L / 100 km</td>
+              <td>Sport léger</td>
+            </tr>
+
+            <tr>
+              <td>Bronze 280$</td>
+              <td>Mercedes-Benz A250</td>
+              <td>Compact Luxe</td>
+              <td>240 km/h</td>
+              <td>6.2 s</td>
+              <td>Automatique</td>
+              <td>6.7 L / 100 km</td>
+              <td>Très confortable</td>
+            </tr>
+
+            <!-- ===================== -->
+            <!--   ARGENT (3)   -->
+            <!-- ===================== -->
+            <tr>
+              <td>Argent 560$</td>
+              <td>Audi S4</td>
+              <td>Sport Berline</td>
+              <td>250 km/h</td>
+              <td>4.7 s</td>
+              <td>Automatique</td>
+              <td>8.5 L / 100 km</td>
+              <td>Performance +</td>
+            </tr>
+
+            <tr>
+              <td>Argent 560$</td>
+              <td>BMW M340i</td>
+              <td>Sport Berline</td>
+              <td>250 km/h</td>
+              <td>4.1 s</td>
+              <td>Automatique</td>
+              <td>8.1 L / 100 km</td>
+              <td>Moteur 6 cylindres</td>
+            </tr>
+
+            <tr>
+              <td>Argent 560$</td>
+              <td>Mercedes-AMG C43</td>
+              <td>AMG Sport</td>
+              <td>250 km/h</td>
+              <td>4.6 s</td>
+              <td>Automatique</td>
+              <td>8.7 L / 100 km</td>
+              <td>AWD AMG</td>
+            </tr>
+
+            <!-- ===================== -->
+            <!--         OR (3)       -->
+            <!-- ===================== -->
+            <tr>
+              <td>Or 890$</td>
+              <td>Audi RS7</td>
+              <td>Super Berline</td>
+              <td>305 km/h</td>
+              <td>3.6 s</td>
+              <td>Automatique</td>
+              <td>11.5 L / 100 km</td>
+              <td>Ultra Luxe</td>
+            </tr>
+
+            <tr>
+              <td>Or 890$</td>
+              <td>BMW M5 Competition</td>
+              <td>Super Berline</td>
+              <td>305 km/h</td>
+              <td>3.3 s</td>
+              <td>Automatique</td>
+              <td>11.1 L / 100 km</td>
+              <td>V8 Bi-turbo</td>
+            </tr>
+
+            <tr>
+              <td>Or 890$</td>
+              <td>Mercedes-AMG GT</td>
+              <td>Sport Exotique</td>
+              <td>310 km/h</td>
+              <td>3.5 s</td>
+              <td>Automatique</td>
+              <td>12.4 L / 100 km</td>
+              <td>Deux places ultra sport</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </div>
+
+    <!-- SECTION ARTICLE -->
+    <div>
+      <section class="article centre" id="article">
+        <h1>Articles</h1>
+      </section>
+    </div>
+
+    <!-- SECTION GALERIE IMAGE -->
+    <div>
+      <section class="galerie centre" id="galerie">
+        <h1>Galerie</h1>
+      </section>
+    </div>
+
+    <!-- SECTION VIDEO -->
+    <div>
+      <section class="video centre" id="video">
+        <h1>Vidéo</h1>
+      </section>
+    </div>
+
+    <!---- FOOTER (ADRESSE)-->
+    <div>
+      <footer class="adresse centre" id="adresse">
+        <!-- TITRE -->
+        <h1 class="adresse__titre">Nous rejoindre</h1>
+
+        <!-- SECTION 1 -->
+        <section class="adresse__section">
+          <h3>Contact</h3>
+          <p>Email: contact@luxauto.com</p>
+          <p>Téléphone: 123-456-678</p>
+          <p>Adresse: 123 Rue du Luxe, Montréal, QC</p>
+        </section>
+
+        <!-- SECTION 2 -->
+        <section class="adresse__section adresse_liens">
+          <h3>Liens rapides</h3>
+          <a href="#acceuil">Accueil</a>
+          <a href="#inscription">Inscription</a>
+          <a href="#tableau">Nos Abonnements</a>
+          <a href="#article">Articles</a>
+        </section>
+
+        <!-- SECTION 3 -->
+        <section class="adresse__section">
+          <h3>Réseaux sociaux</h3>
+
+          <div class="adresse__resaux">
+            <!-- FACEBOOK -->
+            <img
+              src="https://s2.svgbox.net/social.svg?ic=facebook&color=fff"
+              alt="facebook"
+            />
+
+            <!-- INSTAGRAM -->
+            <img
+              src="https://s2.svgbox.net/social.svg?ic=instagram&color=fff"
+              alt="instagram"
+            />
+
+            <!-- LINKEDIN -->
+            <img
+              src="https://s2.svgbox.net/social.svg?ic=linkedin&color=fff"
+              alt="linkedin"
+            />
+
+            <!-- TIKTOK -->
+            <img
+              src="https://s2.svgbox.net/social.svg?ic=tiktok&color=fff"
+              alt="tiktok"
+            />
+
+            <!-- YOUTUBE -->
+            <img
+              src="https://s2.svgbox.net/social.svg?ic=youtube&color=ffffff"
+              alt="youtube"
+            />
+          </div>
+        </section>
+
+        <!-- SECTION 4 -->
+        <section class="adresse__section">
+          <h3>Newsletter</h3>
+          <p>Recevez nos offres exclusives:</p>
+          <form>
+            <input type="email" placeholder="Votre email" />
+            <button type="submit">S'inscrire</button>
+          </form>
+        </section>
+      </footer>
+    </div>
+  </body>
+</html>

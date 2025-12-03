@@ -1,0 +1,315 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body > div:nth-of-type(1) {
+  /* ACCÉDER AU PREMIER DIV DANS LE BODY */
+  background: linear-gradient(to bottom, transparent 80%, black 100%),
+    url(../images/Skyline.jpg);
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+body > div:nth-of-type(2) {
+  background: linear-gradient(to bottom, black 0%, transparent 20%),
+    linear-gradient(to top, black 0%, transparent 20%),
+    url(../images/GRSupra.jpg);
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+body > div:nth-of-type(3) {
+  background: linear-gradient(to bottom, black 0%, transparent 20%),
+    linear-gradient(to top, black 0%, transparent 20%),
+    url(../images/M4\ Comp.png);
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+body > div:nth-of-type(4) {
+  background-color: green;
+}
+
+body > div:nth-of-type(5) {
+  background-color: violet;
+}
+
+body > div:nth-of-type(6) {
+  background-color: red;
+}
+
+body > div:nth-of-type(7) {
+  background: linear-gradient(to top, transparent 80%, black 100%),
+    url(../images/VoitureFooter.jpeg);
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+section,
+header {
+  min-height: 100vh;
+}
+
+footer {
+  min-height: fit-content;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+/* =================================== */
+/* CLASSES */
+/* ----------------------------------- */
+.centre {
+  max-width: 1100px;
+  margin: 0 auto; /* POUR CENTRÉ */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.3
+  ); /* TRANSPARENCE AU CENTRE DE LA PAGE */
+  padding: 25px;
+}
+
+/* -- HERO -- */
+.hero {
+}
+
+.hero__logo {
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.hero__barreSup {
+  background-color: #9960b07a;
+}
+
+.hero__header {
+  backdrop-filter: blur(5px);
+}
+
+.hero__titre {
+  font-family: "Charm", cursive;
+  font-size: 6rem;
+  letter-spacing: 5px;
+  color: #ffc4c4;
+  text-shadow: 5px 3px 2px rgb(173, 32, 255);
+  padding-bottom: 50px;
+}
+
+.hero__sousTitre {
+  font-family: "Charm", cursive;
+  font-size: 1.8rem;
+  color: rgb(194, 194, 194);
+  text-shadow: 3px 2px 6px #00ccff;
+  padding: 10px;
+}
+
+.hero__description {
+  max-width: 550px;
+  line-height: 35px;
+  font-size: 1rem;
+  background: linear-gradient(90deg, #0303036b, rgba(0, 0, 0, 0.041));
+  text-shadow: 1px 2px 2px #00ccff;
+  border-radius: 20px;
+  padding: 2px 5px;
+}
+
+.hero__inscription {
+  display: block;
+  max-width: fit-content;
+  font-family: "Tangerine", cursive;
+  text-decoration: none;
+  font-size: 3.3rem;
+  background: linear-gradient(-90deg, #030303d7, rgba(0, 0, 0, 0.274));
+  border-radius: 10px;
+  color: white;
+  padding: 2px 10px;
+}
+
+.hero__inscription:hover {
+  transform: scale(1.05);
+}
+
+.hero__bas {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+}
+
+.hero__resaux {
+  padding-top: 20px;
+}
+
+.hero__resaux img {
+  width: 40px;
+  height: 40px;
+  padding-left: 15px;
+}
+
+.hero__resaux img:hover {
+  transform: scale(1.2);
+}
+
+.hero__auteur {
+  font-family: "Charm", cursive;
+  font-size: 1.5rem;
+  text-shadow: 3px 2px 4px #800101;
+}
+
+.hero > .centre {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.2
+  ); /* TRANSPARENCE PLUS BLANCHE JUSTE POUR LE HERO */
+}
+
+/* -- SECTION INSCRIPTION -- */
+.inscription {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 60px 20px;
+  border-radius: 20px;
+  backdrop-filter: blur(6px);
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.inscription__titre {
+  font-family: "Charm", cursive;
+  font-size: 3.5rem;
+  text-align: center;
+  text-shadow: 1px 1px 1px cyan;
+}
+
+.inscription__sousTitre {
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* -- SECTION TABLEAU -- */
+.tableau {
+  padding: 40px;
+  background-color: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(6px);
+  border-radius: 20px;
+}
+
+.tableau h1 {
+  text-align: center;
+  font-family: "Charm", cursive;
+  font-size: 3rem;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 5px rgb(212, 0, 255);
+}
+
+/* -- SECTION FOOTER (ADRESSE) -- */
+.adresse {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(8px);
+  color: white;
+  border-radius: 20px;
+  gap: 20px;
+  /*max-height: 100vh;
+  /*overflow: hidden;*/
+}
+
+.adresse__titre {
+  width: 100%;
+  text-align: center;
+  font-family: "Charm", cursive;
+  font-size: 3.2rem;
+  margin-bottom: 20px;
+  text-shadow: 7px 5px 10px #ff7aff;
+  color: #ffd3d3;
+}
+
+.adresse__section {
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.adresse__section h3 {
+  font-family: "Charm", cursive;
+  font-size: 1.5rem;
+  color: #ff7aff;
+  text-shadow: 1px 1px 3px purple;
+}
+
+.adresse__section a {
+  color: #ffc4c4;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.adresse__section a:hover {
+  color: #00ccff;
+}
+
+.adresse__section img {
+  width: 28px;
+  height: 28px;
+  padding-right: 9px;
+}
+
+.adresse__section img:hover {
+  transform: scale(1.2);
+}
+
+.adresse__section form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.adresse__section input[type="email"] {
+  padding: 8px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.adresse__section button {
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  background: linear-gradient(180deg, #5a2ea6, #833ab4);
+  color: white;
+  cursor: pointer;
+  font-family: "Tangerine", cursive;
+  font-size: 2.3rem;
+}
+
+.adresse__section button:hover {
+  transform: scale(1.05);
+}

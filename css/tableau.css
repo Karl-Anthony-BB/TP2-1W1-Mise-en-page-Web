@@ -1,0 +1,30 @@
+/* TABLE */
+.tableau table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  font-size: 0.95rem;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+}
+
+/* HEADER */
+.tableau thead th {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 15px 10px;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+/* RANGÉE */
+.tableau tbody td {
+  padding: 30px 10px;
+}
+
+.tableau tbody tr:nth-of-type(odd) {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.tableau tbody tr:hover {
+  transform: scale(1.01);
+}

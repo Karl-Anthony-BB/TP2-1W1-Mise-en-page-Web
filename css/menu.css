@@ -1,0 +1,42 @@
+#chk-burger {
+  display: none;
+}
+
+.hero__navigation {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  text-align: right;
+}
+
+.navigation__menu {
+  transform: translateX(115%);
+  transition: transform 0.6s linear;
+  text-align: center;
+  background: linear-gradient(90deg, #000000d2, rgba(0, 0, 0, 0.137));
+  border-radius: 8px;
+  border: 1px solid rgb(81, 0, 105);
+  padding: 3px;
+}
+
+.navigation__menu a {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  display: block;
+  text-decoration: none;
+  padding: 4px;
+  margin: 5px;
+  font-size: 1.3rem;
+  border-radius: 4px;
+  color: white;
+  text-shadow: 2px 3px 2px rgb(121, 21, 236);
+}
+
+.navigation__bouton {
+}
+
+/* EN BAS D'UNE AUTRE BALISE, MAIS PAS UN PARENT ILS SONT AU MÊME NIVEAU C'EST PLUS COMME UN FRÈRE */
+#chk-burger:checked ~ .navigation__menu {
+  transform: translateX(0);
+  text-align: center;
+}
