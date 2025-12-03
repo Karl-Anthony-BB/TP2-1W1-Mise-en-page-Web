@@ -15,4 +15,4 @@ bouton d'inscription ci-dessous et rejoignez-nous dès maintenant.
 
 - Auteur: Karl-Anthony Bastien-Bisson
 - Cours: 1W1-Mise en page Web
-- Github-page:
+- Github-page: https://karl-anthony-bb.github.io/TP2-1W1-Mise-en-page-Web/
