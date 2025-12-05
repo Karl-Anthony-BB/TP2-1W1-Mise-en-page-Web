@@ -11,14 +11,16 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/menu.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/menu.css" />
     <link rel="stylesheet" href="css/formulaire.css" />
     <link rel="stylesheet" href="css/tableau.css" />
+    <link rel="stylesheet" href="css/adresse.css" />
+    <link rel="stylesheet" href="css/article.css" />
   </head>
   <body>
     <div class="hero" id="acceuil">
-      <!-- HERO -->
+      <!-- //////////////////////// HERO -->
       <!-- BARRE SUP -->
       <div class="hero__barreSup">
         <!-- LOGO -->
@@ -83,12 +85,19 @@
 
         <div class="hero__bas">
           <!-- DÉPOT GITHUB -->
-          <p>
-            Dépot Github:
+          <p class="hero__github">
+            Dépôt GitHub :
             <a
               href="https://github.com/Karl-Anthony-BB/TP2-1W1-Mise-en-page-Web"
-              >GitHub Page</a
             >
+              <img
+                src="https://s2.svgbox.net/social.svg?ic=github&color=fff"
+                alt="github"
+                width="20px"
+                height="20px"
+              />
+              GitHub Page
+            </a>
           </p>
 
           <!-- NOM D'AUTEUR -->
@@ -132,7 +141,7 @@
       </header>
     </div>
     <!---- MAIN-->
-    <!-- SECTION INSCRIPTION (FORMULAIRE) -->
+    <!-- ////////////////// SECTION INSCRIPTION (FORMULAIRE) -->
     <div>
       <section class="inscription centre" id="inscription">
         <!-- TEXTE -->
@@ -194,7 +203,7 @@
       </section>
     </div>
 
-    <!-- SECTION TABLEAU -->
+    <!-- ///////////////////////////////// SECTION TABLEAU -->
     <div>
       <section class="tableau centre" id="tableau">
         <h1>Nos Abonnements</h1>
@@ -325,10 +334,104 @@
       </section>
     </div>
 
-    <!-- SECTION ARTICLE -->
+    <!-- ////////////////////////////// SECTION ARTICLE -->
     <div>
       <section class="article centre" id="article">
-        <h1>Articles</h1>
+        <h2>Nos meilleures voitures</h2>
+
+        <!-- ARTICLE 1 -->
+        <article>
+          <div class="article__div">
+            <h3>Audi RS7</h3>
+            <h4>- La puissance contrôlée</h4>
+            <p>
+              Son mélange parfait entre luxe, agressivité et performance en fait
+              une des voitures les plus recherchées au monde. Grâce à son V8
+              bi-turbo et son châssis affûté, elle offre une conduite aussi
+              fluide que brutale. Disponible dans l'abonnement Or.
+            </p>
+            <p>
+              Ses performances impeccables et son design futuriste justifient sa
+              place dans l'abonnement Or. Que ce soit pour des accélérations
+              fulgurantes et sauvages ou des virages maîtrisés et calculés, elle
+              offre une expérience qui dépasse toutes les attentes. Disponible
+              dans l'abonnement Or.
+            </p>
+          </div>
+          <figure class="article__figure">
+            <img src="images/AudiRS7.jpg" alt="Audi RS7" />
+            <figcaption>Audi RS7</figcaption>
+          </figure>
+        </article>
+
+        <!-- ARTICLE 2 -->
+        <article>
+          <div class="article__div">
+            <h3>BMW M5 Competition</h3>
+            <h4>- La puissance radicale de Berlin</h4>
+            <p>
+              Avec son V8 et son système de traction intégrale intelligent, elle
+              combine précision allemande et sensations fortes. Disponible dans
+              l'abonnement Or.
+            </p>
+            <p>
+              C'est la berline parfaite pour ceux qui veulent dominer la route,
+              avec une accélération contrôlée, un confort impeccable et un son
+              inoubliable provenant de son moteur M Power légendaire.
+            </p>
+          </div>
+          <figure class="article__figure">
+            <img src="images/BMW M5 Competition.jpg" alt="BMW M5 Competition" />
+            <figcaption>BMW M5 Competition</figcaption>
+          </figure>
+        </article>
+
+        <!-- ARTICLE 3 -->
+        <article>
+          <div class="article__div">
+            <h3>Mercedes-AMG GT</h3>
+            <h4>- Le démon élégant de la route</h4>
+            <p>
+              La Mercedes-AMG GT est une icône d'élégance et d'agressivité. Son
+              moteur AMG rugissant crée une expérience digne d'une supercar.
+            </p>
+            <p>
+              Son équilibre entre luxe et puissance en fait une voiture idéale
+              pour ceux qui veulent un style unique sans sacrifier la
+              performance.
+            </p>
+          </div>
+          <figure class="article__figure">
+            <img src="images/Mercedes-AMG GT.jpg" alt="Mercedes-AMG GT" />
+            <figcaption>Mercedes-AMG GT</figcaption>
+          </figure>
+        </article>
+
+        <!-- ARTICLE 4 -->
+        <article>
+          <div class="article__div">
+            <h3>Toyota Supra MK4</h3>
+            <h4>- L'icône légendaire, disponible hors abonnement</h4>
+            <p>
+              La Supra MK4 est notre voiture de prestige la plus rare,
+              disponible uniquement en achat individuel. Véritable icône de la
+              culture automobile, elle représente la fusion parfaite entre
+              prestige, nostalgie et performances intemporelles.
+            </p>
+            <p>
+              Étant un modèle de 1994 en parfait état, cette édition spéciale
+              est réservée aux passionnés qui souhaitent posséder un véritable
+              morceau d'histoire.
+            </p>
+          </div>
+          <figure class="article__figure">
+            <img
+              src="images/1994 Toyota Supra Mk4.jpg"
+              alt="Toyota Supra Mk4"
+            />
+            <figcaption>Toyota Supra Mk4</figcaption>
+          </figure>
+        </article>
       </section>
     </div>
 

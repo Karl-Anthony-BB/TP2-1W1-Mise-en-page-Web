@@ -1,0 +1,84 @@
+/* -- SECTION FOOTER (ADRESSE) -- */
+.adresse {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(8px);
+  color: white;
+  border-radius: 20px;
+  gap: 20px;
+}
+
+.adresse__titre {
+  width: 100%;
+  text-align: center;
+  font-family: "Charm", cursive;
+  font-size: 3.2rem;
+  text-shadow: 7px 5px 10px #ff7aff;
+  color: #ffd3d3;
+}
+
+.adresse__section {
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.adresse__section h3 {
+  font-family: "Charm", cursive;
+  font-size: 1.5rem;
+  color: #ff7aff;
+  text-shadow: 1px 1px 3px purple;
+}
+
+.adresse__section a {
+  color: #ffc4c4;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.adresse__section a:hover {
+  color: #00ccff;
+}
+
+.adresse__section img {
+  width: 28px;
+  height: 28px;
+  padding-right: 9px;
+}
+
+.adresse__section img:hover {
+  transform: scale(1.2);
+}
+
+.adresse__section form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.adresse__section input[type="email"] {
+  padding: 8px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.adresse__section button {
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  background: linear-gradient(180deg, #5a2ea6, #833ab4);
+  color: white;
+  cursor: pointer;
+  font-family: "Tangerine", cursive;
+  font-size: 2.3rem;
+}
+
+.adresse__section button:hover {
+  transform: scale(1.05);
+}
