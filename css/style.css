@@ -49,11 +49,11 @@ body > div:nth-of-type(4) {
 }
 
 body > div:nth-of-type(5) {
-  background-color: violet;
+  background-color: purple;
 }
 
 body > div:nth-of-type(6) {
-  background-color: red;
+  background-color: blue;
 }
 
 body > div:nth-of-type(7) {
@@ -71,6 +71,11 @@ header {
 
 footer {
   min-height: fit-content;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
 }
 
 h1,
