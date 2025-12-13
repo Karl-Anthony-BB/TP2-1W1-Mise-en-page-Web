@@ -49,11 +49,21 @@ body > div:nth-of-type(4) {
 }
 
 body > div:nth-of-type(5) {
-  background-color: purple;
+  background: linear-gradient(to bottom, black 0%, transparent 20%),
+    linear-gradient(to top, black 0%, transparent 20%),
+    url(../images/Mclaren.jpg);
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 body > div:nth-of-type(6) {
-  background-color: blue;
+  background: linear-gradient(to bottom, black 0%, transparent 20%),
+    linear-gradient(to top, black 0%, transparent 20%),
+    url(../images/VoitureLune.jpg);
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 body > div:nth-of-type(7) {
