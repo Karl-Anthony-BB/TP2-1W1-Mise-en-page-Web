@@ -1,6 +1,7 @@
 /* GÉNÉRAL */
-/* -- SECTION TABLEAU -- */
 .tableau {
+  display: flex;
+  flex-direction: column;
   padding: 40px;
   background-color: rgba(0, 0, 0, 0.35);
   backdrop-filter: blur(6px);
