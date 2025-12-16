@@ -1,0 +1,16 @@
+.navigation__home {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  text-align: right;
+
+  z-index: 9999; /* TOUJOURS PAR DESSUS TOUT */
+}
+
+.home__img {
+  background-color: red;
+}
+
+.home__img:hover {
+  filter: hue-rotate(270deg);
+}

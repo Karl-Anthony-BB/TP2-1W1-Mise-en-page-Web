@@ -67,6 +67,10 @@ body > div:nth-of-type(6) {
 }
 
 body > div:nth-of-type(7) {
+  background-color: rgb(255, 225, 0);
+}
+
+body > div:nth-of-type(8) {
   background: linear-gradient(to top, transparent 80%, black 100%),
     url(../images/VoitureFooter.jpeg);
   background-position: 50%;
@@ -100,12 +104,7 @@ h3 {
 .centre {
   max-width: 1100px;
   margin: 0 auto; /* POUR CENTRÉ */
-  background-color: rgba(
-    255,
-    255,
-    255,
-    0.3
-  ); /* TRANSPARENCE AU CENTRE DE LA PAGE */
+  background-color: #fff3ab;
   padding: 25px;
 }
 

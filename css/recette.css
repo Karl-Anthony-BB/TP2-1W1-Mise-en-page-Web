@@ -1,0 +1,101 @@
+/* LE DIV QUI CONTIENT LE TOUT */
+.global {
+}
+
+.global h1,
+h2,
+h3 {
+  color: black;
+  font-family: "DynaPuff", system-ui;
+  font-weight: lighter;
+}
+
+.global h1 {
+  font-size: 4.3rem;
+  padding-bottom: 50px;
+}
+
+.global h3 {
+  padding-bottom: 5px;
+}
+
+.global strong,
+li,
+figcaption, ol {
+  color: black;
+  font-family: "Montserrat", sans-serif;
+}
+
+.global li {
+  text-align: left;
+  list-style-type: none;
+  line-height: 1.4rem;
+}
+
+.global ol {
+  padding: 0;
+  margin: 0;
+}
+
+/* ARTICLE QUI CONTIENT TOUT APART LE DIV GLOBAL */
+.recette {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.recette:nth-of-type(odd) {
+  padding-bottom: 40px;
+}
+
+.recette:nth-of-type(even) {
+  border-top: 10px dotted rgba(128, 128, 128, 0.265);
+  padding-top: 40px;
+  border-bottom: 10px dotted rgba(128, 128, 128, 0.265);
+  padding-bottom: 40px;
+}
+
+.recette__div {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 250px;
+}
+
+/* DIV DE LA FIGURE */
+.recette__image {
+  height: 325px;
+  transform: rotate(5deg);
+  transition: transform 0.3s;
+}
+
+.recette:nth-of-type(odd) .recette__image {
+  transform: rotate(-5deg);
+  order: -1;
+  transition: transform 0.3s;
+}
+
+.recette .recette__image:hover {
+  transform: rotate(0deg);
+}
+
+.recette__figure {
+  border: 2px solid rgb(172, 215, 253);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/* LA VRAI IMAGE */
+.recette__img {
+  width: 350px;
+  height: 300px;
+  padding: 0;
+  margin: 0;
+}
+
+.recette__figcaption {
+  background-color: #d9d78b;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
